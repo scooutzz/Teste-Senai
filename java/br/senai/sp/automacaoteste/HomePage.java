@@ -2,7 +2,7 @@ package br.senai.sp.automacaoteste;
 
 import java.util.concurrent.TimeUnit;
 
-import org.junit.After;
+//import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -25,11 +25,11 @@ public class HomePage {
 	@Test
 	public void TesteNavegarParaGoogle() {
 		driver.get("https://online.sp.senai.br/");
-
+		
 		WebElement input = driver.findElement(By.id("Busca1_txtFiltro"));
-
+		
 		input.sendKeys("gestão", Keys.ENTER);
 		// driver.findElement(By.id("Busca1_txtFiltro")).sendKeys(Keys.ENTER);
-		// driver.findElement(By.id("Busca1_btnBusca")).click();
+		//driver.findElement(By.id("Busca1_btnBusca")).click();
 	}
 }
